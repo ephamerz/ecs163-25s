@@ -1,0 +1,50 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Data Science Salary Visualizations</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        svg {
+            background-color: white;
+        }
+
+        .axis-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p { /* making margins for my paragraph text */
+            margin: 0px 0px; 
+            font-size: 14px;
+            line-height: 1.5;
+            color: black;
+            width: auto; 
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="chart-container"></div>
+    <p> 
+        These are my 3 data visualizations on the dataset concluding Data Science Salaries from 2020-2023.
+        I chose a bar chart for my first visualization, emphasizing the difference in salaries between each level
+        of experience. I then assembled them in increasing order to show how salary, on average, increases as your 
+        experience level increases as well. My second chart, the pie chart, is simple and shows the differnece in average
+        salaries by company size. You can tell that you make the most money, on average, working at a medium-sized company
+        and the least money at a small company, probably referring to start-ups. Lastly, my advanced diagram is a Sankey diagram
+        that shows a flow of change, starting from experience level, then the user chooses a job title that has been summarized in 
+        categories of similarity, and then showing how many of those filtered workers work in a small, medium, or large-sized company.
+        This diagram is more of a comparison of ratio or count, as opposed to the other 2 diagrams that show salary based on a factor. 
+        Overall, I wanted to show what paths are popular in the field, and factors for salary. *CHATGPT USED FOR SYNTAX/FUNCTION HELP*
+    </p>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
