@@ -1,0 +1,66 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Data Science Salary Visualizations</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        svg {
+            background-color: white;
+        }
+
+        .axis-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p { 
+            margin: 0px 0px; 
+            font-size: 14px;
+            line-height: 1.5;
+            color: black;
+            width: auto; 
+            text-align: left;
+        }
+
+        .selected {
+            stroke: orange !important;
+            stroke-width: 3px;
+            opacity: 1 !important;
+        }
+
+        .faded {
+            opacity: 0.2 !important;
+            stroke-opacity: 0.05 !important;
+            stroke-width: 1px !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="chart-container"></div>
+    <p> 
+        Homework 3: Here is my incorporation of visualization techniques.
+        This is an extra step from my Homework 2 visualizations. 
+        For my bar chart, I decided to go with the selection interaction technique by allowing
+        users to click on individual bars--when a bar is selected, it becomes highlighted
+        to indicate a difference in selected bars, and then a hover is added that shows data
+        about the selected bar. A user can explore the average salary associated with a bar.
+        Next, I used a view transition (zoom and pan) for my pie chart. A user can click
+        a slice of the pie and an information box appears next to it explaining the ratio 
+        percentage of the pie and the average salary for people in that pie too! Lastly, 
+        the sankey diagram has a brushing effect to let users hover over and click and drag
+        across links and nodes to look deeper into each count for the nodes and links. 
+        *CHATGPT USED FOR FUNCTION/SYNTAX HELP* 
+    </p>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
